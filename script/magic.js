@@ -172,6 +172,20 @@ function setvida() {
   inicia()
   save()
 }
+function clearstorage(){
+  localStorage.clearItem('vida', vida);
+  localStorage.clearItem('vida2', vida2);
+  localStorage.clearItem('vida3', vida3);
+  localStorage.clearItem('vida4', vida4);
+  localStorage.clearItem('vida5', vida5);
+  localStorage.clearItem('vida6', vida6);
+  localStorage.clearItem('vida7', vida7);
+  localStorage.clearItem('vida8', vida8);
+  localStorage.clearItem('vida9', vida9);
+  localStorage.clearItem('vida10', vida10);
+}
+  
+}
 function teste() {
   document.getElementById("vida").style.heigth = tt+"px";
 }
