@@ -1,17 +1,20 @@
 ///////////////////////
-var vida = 20;
-vida2 = 20,
-vida3 = 20,
-vida4 = 20,
-vida5 = 20,
-vida6 = 20,
-vida7 = 20,
-vida8 = 20,
-vida9 = 20,
-vida10 = 20;
+variaveis()
+function variaveis(){
+vida = 0;
+vida2 = 0,
+vida3 = 0,
+vida4 = 0,
+vida5 = 0,
+vida6 = 0,
+vida7 = 0,
+vida8 = 0,
+vida9 = 0,
+vida10 =0;
+}
 /////////////////////////////////////////////////////
 function inicia() {
-  document.getElementById("vida").innerHTML = vda
+  document.getElementById("vida").innerHTML = vida
   document.getElementById("vida2").innerHTML = vida2
   document.getElementById("vida3").innerHTML = vida3
   document.getElementById("vida4").innerHTML = vida4
@@ -172,21 +175,14 @@ function setvida() {
   inicia()
   save()
 }
-function clear(){
-  localStorage.clearItem('vida', vida);
-  localStorage.clearItem('vida2', vida2);
-  localStorage.clearItem('vida3', vida3);
-  localStorage.clearItem('vida4', vida4);
-  localStorage.clearItem('vida5', vida5);
-  localStorage.clearItem('vida6', vida6);
-  localStorage.clearItem('vida7', vida7);
-  localStorage.clearItem('vida8', vida8);
-  localStorage.clearItem('vida9', vida9);
-  localStorage.clearItem('vida10', vida10);
-}
-  
-}
-function teste() {
-  document.getElementById("vida").style.heigth = tt+"px";
-}
+function clearstorage(){
+  var resultado = window.confirm('Limpar todos valores na LocalStorage?')
+  if (resultado === true){
+  localStorage.clear();
+  variaveis()
+  save()
+  inicia()
+    }
+else{alert('Você desistiu de limpar a LocalStorage.')}
+  }
 /////////////////////////////////////////////////////
