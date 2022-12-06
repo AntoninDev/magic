@@ -185,4 +185,14 @@ function clearstorage(){
     }
 else{alert('Você desistiu de limpar a LocalStorage.')}
   }
+  function cmdprompt(){
+    var cmd = window.prompt("Digite o comando.")
+    comandos()
+  }
+  function comandos(){
+    if (cmd === setvida){
+      setvida()
+    }
+    
+  }
 /////////////////////////////////////////////////////
