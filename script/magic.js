@@ -11,7 +11,7 @@ vida9 = 20,
 vida10 = 20;
 /////////////////////////////////////////////////////
 function inicia() {
-  document.getElementById("vida").innerHTML = vida
+  document.getElementById("vida").innerHTML = vda
   document.getElementById("vida2").innerHTML = vida2
   document.getElementById("vida3").innerHTML = vida3
   document.getElementById("vida4").innerHTML = vida4
@@ -172,7 +172,7 @@ function setvida() {
   inicia()
   save()
 }
-function clearstorage(){
+function clear(){
   localStorage.clearItem('vida', vida);
   localStorage.clearItem('vida2', vida2);
   localStorage.clearItem('vida3', vida3);
