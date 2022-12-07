@@ -12,6 +12,7 @@ vida8 = 0,
 vida9 = 0,
 vida10 =0;
 }
+var cmd;
 /////////////////////////////////////////////////////
 function inicia() {
   document.getElementById("vida").innerHTML = vida
@@ -134,14 +135,6 @@ function loadtime() {
     load();
   });
 }
-
-function comando() {
-   let cnd = window.prompt('Digite o codigo.')
-    if (cmd === setvida){
-      setvida()
-    }
-  }
-
 function load() {
   vida = localStorage.getItem('vida');
   vida2 = localStorage.getItem('vida2');
@@ -192,5 +185,12 @@ function clearstorage(){
   inicia()
     }
 else{alert('Você desistiu de limpar a LocalStorage.')}
+  }
+  function comando() {
+   let vl = prompt('Digite o codigo.')
+   cmd = vl
+   if (cmd === 'setvida'){setvida()}
+   if (cmd === 'clearstorage'){clearstorage()}
+    else{alert('Esse comando não existe.')}
   }
 /////////////////////////////////////////////////////
