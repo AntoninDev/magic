@@ -190,7 +190,8 @@ else{alert('Você desistiu de limpar a LocalStorage.')}
    let vl = prompt('Digite o codigo.')
    cmd = vl
    if (cmd === 'setvida'){setvida()}
-   if (cmd === 'clearstorage'){clearstorage()}
-    else{alert('Esse comando não existe.')}
-  }
+    else{if (cmd === 'clearstorage'){clearstorage()}
+    else{alert('Esse comando não existe.');
+     }}
+   }
 /////////////////////////////////////////////////////
