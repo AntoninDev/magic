@@ -24,23 +24,25 @@
 }
 .vida{
   color: black;
-  background: red;
+  background: grey;
   height: 20%;
-  width: 50%;
+  width: 45%;
   text-align: center;
   font-size: 600%;
   border-radius: 15px;
+  border: 3px solid red;
 }
 .vidar{
   color: black;
-  background: green;
+  background: grey;
   height: 20%;
-  width: 50%;
+  width: 45%;
   text-align: center;
   font-size: 600%;
   border-radius: 15px;
-  transform: translatey(-144px);
+  transform: translatey(-151px);
   float: right;
+  border: 3px solid red;
   }
 .btn{
   height: 40px;
@@ -53,6 +55,7 @@
   }
   .btnr{
     float: right;
+    transform: translatex(90px);
     height: 40px;
     width: 40px;
     border-radius: 10px;
@@ -60,21 +63,6 @@
     color: red;
     font-size: 20px;
     margin-left: 5px;
-    }
-    .nome{
-     top: 100px;
-      height: 20px;
-      width: 100px;
-      background: orange;
-      text-align: center;
-      font-size: 10%;
-      border-radius: 10px;
-    }
-    .menu{
-      height: 5%;
-      width: 100%;
-      background: yellow;
-      position: fixed;
     }
     .cmd{
       height: 40px;
